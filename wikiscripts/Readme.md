@@ -87,4 +87,8 @@ Row 60 in "files.sh is **"printf ' \n|/9.vmfarm1 ' >>  vm_machines.txt"**
 vmfarm1 is a Physical Machine that is currently hosting 9 virtual machines. If a new virtual machine is added to the vmfarm1,
 the user has to change the number "9" to "10" and so on.
 
+THIS HAS BEEN FIXED.
+**printf ' \n|/%d.vmfarm1 ' "${#vmfarm1[@]}" >>  vm_machines.txt** 
+To do the same with other hosts, just copy the same line and change vmfarm1 to the host you wish to write.
+
 This is on DO TO list, to make it easier for the user, so they don't have to change anything in "files.sh".
